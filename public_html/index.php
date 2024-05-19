@@ -9,6 +9,8 @@ if($_GET['url']) {
 
     if($url[0] === 'api') {
         //..
-    }
-    
+        array_shift($url);
+        $service = $url[0]; 
+        var_dump($url); 
+    }    
 }
