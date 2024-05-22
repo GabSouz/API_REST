@@ -9,9 +9,11 @@ class UserService {
     public function get($id = null) {
 
         if($id) {
-            // return User::getUsers($id);
+            
+            return User::select($id);
+
         } else {
-            // return User::getAll($id);
+            return User::selectAll();
         }
 
     }
